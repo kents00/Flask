@@ -1,0 +1,70 @@
+{% include "base.html" %}
+{% block home %}
+    <div>
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <img
+            src="{{ url_for ('static', filename='images/kickstarter.svg')}}"
+            class="home-image"
+          />
+          <div class="home-btn-group">
+            <button class="home-login button">
+              <a
+                href="https://github.com/kents00"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link"
+              >
+                <span>About Me</span>
+                <br />
+              </a>
+            </button>
+            <a
+              href="https://ko-fi.com/kents_workof_art"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-register button"
+            >
+              Support
+            </a>
+          </div>
+        </header>
+        <div class="home-hero">
+          <img
+            alt="image"
+            src="{{ url_for ('static', filename='images/pngwing.com-1500h.png')}}"
+            class="home-image2"
+          />
+          <div class="home-container2">
+            <h1 class="home-text2">Flask</h1>
+            <h2 class="home-text3">Web development, one drop at a time</h2>
+            <div class="home-btn-group1">
+              <a
+                href="https://flask.palletsprojects.com/en/2.2.x/installation/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link1 button"
+              >
+                Download
+              </a>
+              <a
+                href="https://flask.palletsprojects.com/en/2.2.x/"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link2 button"
+              >
+                Learn More
+              </a>
+            </div>
+            <span class="home-text4">
+              Flask is a micro web framework written in Python. It is classified
+              as a microframework because it does not require particular tools
+              or libraries. It has no database abstraction layer, form
+              validation, or any other components where pre-existing third-party
+              libraries provide common functions.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
